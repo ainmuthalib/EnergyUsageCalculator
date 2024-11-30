@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Energy Usage Calculator</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+    <string name="github_link">GitHub Link</string>
+    <string name="gmail_link">Email Link</string>
+</resources>

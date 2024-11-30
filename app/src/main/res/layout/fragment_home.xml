@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="50dp">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginBottom="48dp"
+            android:contentDescription="App Logo"
+            android:src="@drawable/logo_pic"
+            app:layout_constraintBottom_toTopOf="@+id/editTextUnits"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageInfo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="88dp"
+            android:contentDescription="Information"
+            android:src="@drawable/info"
+            android:fontFamily="@font/garet"
+            android:textSize="16dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/editTextUnits"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextUnits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/garet"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:focusableInTouchMode="true"
+            android:hint="Enter number of electricity unit used (kWh)"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/editTextRebate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextRebate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:fontFamily="@font/garet"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:focusableInTouchMode="true"
+            android:hint="Enter rebate percentage (0% - 5%)"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toTopOf="@+id/buttonCalculate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/garet"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@color/blue"
+            android:text="Calculate Bill"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/buttonClear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/garet"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:background="@color/blue"
+            android:text="Clear"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/textViewBreakdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/garet"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageViewUnits"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewBreakdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/garet"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textViewResult"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewUnits"
+            android:layout_width="wrap_content"
+            android:layout_height="172dp"
+            android:layout_marginBottom="80dp"
+            android:fontFamily="@font/garet"
+            android:contentDescription="Units Icon"
+            android:src="@drawable/block_charges"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
