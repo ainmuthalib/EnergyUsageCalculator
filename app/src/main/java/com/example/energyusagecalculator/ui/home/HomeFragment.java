@@ -71,10 +71,8 @@ public class HomeFragment extends Fragment {
 
             float unitsUsed = Float.parseFloat(unitsUsedStr);
             float rebatePercentage = Float.parseFloat(rebatePercentageStr);
-
             if (rebatePercentage < 0 || rebatePercentage > 5) {
-                textViewResult.setText("Rebate percentage must be between 0 and 5.");
-                textViewBreakdown.setText(""); // Clear breakdown if input is invalid
+                Toast.makeText(getContext(), "Rebate percentage must be between 0 and 5.", Toast.LENGTH_SHORT).show();
                 return;
             }
 

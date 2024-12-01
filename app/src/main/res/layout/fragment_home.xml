@@ -33,15 +33,16 @@
             android:layout_height="25dp"
             android:layout_marginTop="88dp"
             android:contentDescription="Information"
-            android:src="@drawable/info"
             android:fontFamily="@font/garet"
-            android:textSize="16dp"
             android:gravity="center"
+            android:src="@drawable/info"
+            android:textSize="16dp"
             app:layout_constraintBottom_toTopOf="@+id/editTextUnits"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.943"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
         <EditText
             android:id="@+id/editTextUnits"
@@ -52,6 +53,8 @@
             android:textSize="16dp"
             android:gravity="center"
             android:textStyle="bold"
+            android:textColorHint="@color/dark_blue"
+            android:textColor="@color/dark_blue"
             android:focusableInTouchMode="true"
             android:hint="Enter number of electricity unit used (kWh)"
             android:inputType="number"
@@ -66,6 +69,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="48dp"
             android:fontFamily="@font/garet"
+            android:textColorHint="@color/dark_blue"
+            android:textColor="@color/dark_blue"
             android:textSize="16dp"
             android:gravity="center"
             android:textStyle="bold"
@@ -116,6 +121,7 @@
             android:fontFamily="@font/garet"
             android:textSize="18dp"
             android:gravity="center"
+            android:textColor="@color/dark_blue"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/imageViewUnits"
             app:layout_constraintEnd_toEndOf="parent"
@@ -126,6 +132,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/garet"
+            android:textColor="@color/dark_blue"
             android:textSize="16dp"
             android:gravity="center"
             android:textStyle="bold"
@@ -135,7 +142,7 @@
 
         <ImageView
             android:id="@+id/imageViewUnits"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="172dp"
             android:layout_marginBottom="80dp"
             android:fontFamily="@font/garet"

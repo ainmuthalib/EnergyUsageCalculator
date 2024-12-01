@@ -99,8 +99,8 @@
 
     <ImageView
         android:id="@+id/imageViewGitHub"
-        android:layout_width="85dp"
-        android:layout_height="63dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginBottom="24dp"
         android:clickable="true"
         android:contentDescription="@string/github_link"
@@ -114,9 +114,9 @@
 
     <ImageView
         android:id="@+id/imageViewEmail"
-        android:layout_width="85dp"
-        android:layout_height="63dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
         android:clickable="true"
         android:contentDescription="@string/gmail_link"
         android:focusable="true"
@@ -124,23 +124,23 @@
         android:src="@drawable/gmail"
         app:layout_constraintBottom_toTopOf="@+id/textViewAppInfo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintHorizontal_bias="0.684"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textViewAppInfo"
-        android:layout_width="379dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="8dp"
         android:ellipsize="end"
         android:fontFamily="@font/garet"
         android:gravity="center"
-        android:lineSpacingExtra="4dp"
+        android:lineSpacingExtra="2dp"
         android:maxLines="5"
         android:padding="16dp"
         android:text="Energy Usage Calculator is designed to help you estimate your monthly electricity bills effortlessly. By inputting the number of electricity units consumed and any applicable rebate percentage, you can quickly calculate your total charges and final costs."
         android:textColor="@android:color/black"
-        android:textSize="16dp"
+        android:textSize="12dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textViewCopyright"
         app:layout_constraintEnd_toEndOf="parent"
@@ -151,6 +151,7 @@
         android:id="@+id/textViewCopyright"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
         android:fontFamily="@font/garet"
         android:text="© 2024 Ain Binti Abd Muthalib. All Rights Reserved."
         android:textColor="@android:color/darker_gray"
@@ -158,6 +159,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
